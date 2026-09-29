@@ -17,10 +17,13 @@ function App() {
      setdescr( Weather.data.weather[0].description)
      settem( Weather.data.main.temp+"°C")
      setweather( Weather.data.weather[0].main)
+  }).catch(()=>{
+    alert("Please Enter Correct City Name")
   })
- 
+
   
  
+  
  }
   return (<div>
     <div className='text-center p-7 font-poppins'>
